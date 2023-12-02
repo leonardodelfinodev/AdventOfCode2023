@@ -10,7 +10,7 @@ The benchmarking process for this repository has been conducted on an Intel Core
 |                                                | part A                              | part B                              |
 |:-----------------------------------------------|:------------------------------------|:------------------------------------|
 | [Day 1](https://adventofcode.com/2023/day/1)   | `0.026 ms` | `0.032 ms`|
-| [Day 2](https://adventofcode.com/2023/day/2)   | `0.044 ms` | `0.064 ms`|
+| [Day 2](https://adventofcode.com/2023/day/2)   | `0.032 ms` | `0.039 ms`|
 
 ## Input Data Policy
 Please note that the input data required to benchmark or run the files in this repository is not publicly available directly from the repository due to [this request](https://www.reddit.com/r/adventofcode/wiki/faqs/copyright/inputs/).

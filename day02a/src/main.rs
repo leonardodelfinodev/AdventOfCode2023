@@ -1,13 +1,11 @@
 pub fn main() {
     let input = include_str!("../input.txt");
 
-    let games: Vec<&str> = input.lines().collect();
-
     // red, green, blue
     let max_cubes = (12, 13, 14);
     let mut sum_ids = 0;
 
-    for game in games.iter() {
+    for game in input.lines() {
         let (id, is_possible) = process_game(game, max_cubes);
         if is_possible {
             sum_ids += id;
@@ -18,9 +16,9 @@ pub fn main() {
 }
 
 fn process_game(game_data: &str, max_cubes: (usize, usize, usize)) -> (usize, bool) {
-    let parts: Vec<&str> = game_data.split(": ").collect();
-    let id: usize = parts[0].split_whitespace().nth(1).unwrap().parse().unwrap();
-    let rounds = parts[1].split("; ");
+    let mut parts = game_data.split(": ");
+    let id: usize = parts.next().unwrap().split_whitespace().nth(1).unwrap().parse().unwrap();
+    let rounds = parts.next().unwrap().split("; ");
 
     for round in rounds {
         let (red, green, blue) = count_cubes(round);
@@ -38,9 +36,9 @@ fn count_cubes(round: &str) -> (usize, usize, usize) {
     let mut blue = 0;
 
     for cube_info in round.split(", ") {
-        let parts: Vec<&str> = cube_info.split_whitespace().collect();
-        let count: usize = parts[0].parse().unwrap();
-        match parts[1] {
+        let mut parts = cube_info.split_whitespace();
+        let count: usize = parts.next().unwrap().parse().unwrap();
+        match parts.next().unwrap() {
             "red" => red += count,
             "green" => green += count,
             "blue" => blue += count,
@@ -50,3 +48,4 @@ fn count_cubes(round: &str) -> (usize, usize, usize) {
 
     (red, green, blue)
 }
+
