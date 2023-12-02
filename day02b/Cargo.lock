@@ -12,33 +12,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "day01a"
-version = "0.1.0"
-
-[[package]]
-name = "day01b"
-version = "0.1.0"
-
-[[package]]
-name = "day02a"
-version = "0.1.0"
-
-[[package]]
 name = "day02b"
 version = "0.1.0"
 dependencies = [
  "regex",
-]
-
-[[package]]
-name = "execute"
-version = "0.1.0"
-dependencies = [
- "day01a",
- "day01b",
- "day02a",
- "day02b",
- "took",
 ]
 
 [[package]]
@@ -75,9 +52,3 @@ name = "regex-syntax"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c08c74e62047bb2de4ff487b251e4a92e24f48745648451635cec7d591162d9f"
-
-[[package]]
-name = "took"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af1ea65cb083be6f0b13ba9a26eec5eb563e55198e318cbb0f525d593fbd349e"
