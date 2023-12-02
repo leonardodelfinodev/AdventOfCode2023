@@ -6,7 +6,7 @@ My Rust solutions to [Advent Of Code](https://adventofcode.com/2023)!\
 ## Timings
 |                                                | part A                              | part B                              |
 |:-----------------------------------------------|:------------------------------------|:------------------------------------|
-| [Day 1](https://adventofcode.com/2023/day/1)   | `0.057 ms` | `0.694 ms`|
+| [Day 1](https://adventofcode.com/2023/day/1)   | `0.026 ms` | `0.032 ms`|
 | [Day 2](https://adventofcode.com/2023/day/2)   | `0.044 ms` | `0.064 ms`|
 
 ## Benchmarking
